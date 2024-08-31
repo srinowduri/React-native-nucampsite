@@ -61,12 +61,10 @@ const Main = () => {
                     Platform.OS === 'ios' ? 0 : Constants.statusBarHeight
             }}
         >
-            <DirectoryNavigator initialRouteName='HomeNav'
-                screenOptions={{
-                    drawerStyle: {
-                        backgroundColor: '#CEC8FF'
-                    }
-                }}>
+            <Drawer.Navigator
+                initialRouteName='HomeNav'
+                screenOptions={{ drawerStyle: { backgroundColor: '#CEC8FF' }}}
+            >
                 <Drawer.Screen
                     name='HomeNav'
                     component={HomeNavigator}
@@ -77,7 +75,7 @@ const Main = () => {
                     component={DirectoryNavigator}
                     options={{ title: 'Directory' }}
                 />
-            </DirectoryNavigator>
+            </Drawer.Navigator>
 
             {/* <DirectoryNavigator /> */}
         </View>
