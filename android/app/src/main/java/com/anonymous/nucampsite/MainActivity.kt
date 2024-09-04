@@ -1,4 +1,4 @@
-package com.nucampsite
+package com.anonymous.nucampsite
 
 import android.os.Build
 import android.os.Bundle

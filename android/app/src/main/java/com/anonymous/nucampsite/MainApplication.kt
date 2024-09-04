@@ -1,4 +1,4 @@
-package com.nucampsite
+package com.anonymous.nucampsite
 
 import android.app.Application
 import android.content.res.Configuration
